@@ -601,6 +601,9 @@ fill: #EEEEEE;}
         letter-spacing: 0.03em;
         text-transform: uppercase;
        }
+    .footer-form {
+        margin-left: auto;
+    }
     .footer-form-posession {
         display: flex;
         align-items: center;
@@ -763,6 +766,9 @@ margin-bottom: 53px;}
             font-size: 16px;
             line-height: 30px;
             letter-spacing: 0.06em;
+}
+.name-field {
+    
 }
 .form-icon {
     position: absolute;
