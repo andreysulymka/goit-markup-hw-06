@@ -550,7 +550,6 @@ line-height: 1.19;
 }
 .footer-social {
     margin-top: 20px;
-    margin-right: 93px;
     display: flex;
     justify-content: center;
 } 
@@ -621,9 +620,12 @@ fill: #EEEEEE;}
         align-items: center;
     }
     .footer-form-window {
-    margin-right: 12px;
+    display: flex;
+       
     }
     .footer-form-mail {
+        
+        margin-right: 12px;
         width: 358px;
         height: 50px;
         padding: 15px 16px;
@@ -631,6 +633,7 @@ fill: #EEEEEE;}
         border: 1px solid rgba(255, 255, 255, 0.3);
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
             border-radius: 4px;
+        color: var(--white-color);
     }
     .footer-form-mail::placeholder {
         display: flex;
@@ -651,6 +654,7 @@ fill: #EEEEEE;}
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border-style: none;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;    
@@ -661,7 +665,7 @@ fill: #EEEEEE;}
     height: 24px;
     margin-left: 10px;
     content: '';
-    background-image: url(/images/icons/icon\ send.svg);
+    background-image: url(../images/icons/icon\ send.svg);
         
     }
    /* Modal window */
@@ -691,6 +695,7 @@ fill: #EEEEEE;}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
     min-width: 528px;
     min-height: 581px;
     background-color: #FFFFFF;
@@ -700,8 +705,8 @@ fill: #EEEEEE;}
 
 .modal-close-button {
     position: absolute;
-    top: 17px;
-    right: 17px;
+    top: 8px;
+    right: 8px;
     transform: translate(50%,-50%);
     border-radius: 50%;
     border: none;
@@ -713,6 +718,10 @@ fill: #EEEEEE;}
     height: 30px;
     cursor: pointer;
 }
+.modal-close-button:hover,
+.modal-close-button:focus {
+    fill: var(--accent-color);
+}
 .modal-title {
     font-weight: 700;
         font-size: 20px;
@@ -721,8 +730,7 @@ fill: #EEEEEE;}
         letter-spacing: 0.03em;
         color: var(--primary-text-color);
 }
-.modal-window {
-    padding: 40px 39px 40px 41px;}
+
 .form-input-text {
        gap: 10px;
     margin-top: 12px;
@@ -755,6 +763,8 @@ margin-bottom: 10px;}
 }
 .textarea-input {
     padding: 12px 16px;
+    height: 138px;
+    resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
 }
@@ -769,7 +779,7 @@ margin-bottom: 10px;}
     position: relative;
     gap: 5px;
     justify-content: center;
-margin-bottom: 53px;}
+margin-bottom: 30px;}
 .submit-button {
     margin-right: auto;
     margin-left: auto;
