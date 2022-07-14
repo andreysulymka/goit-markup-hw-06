@@ -705,8 +705,8 @@ fill: #EEEEEE;}
 
 .modal-close-button {
     position: absolute;
-    top: 8px;
-    right: 8px;
+    top: 24px;
+    right: 24px;
     transform: translate(50%,-50%);
     border-radius: 50%;
     border: none;
@@ -864,6 +864,7 @@ margin-bottom: 30px;}
         line-height: calc(24/14);
         letter-spacing: 0.03em;
         user-select: none;
+        color: var(--second-text-color);
 }
 .form-agreement {
     font-weight: 400;
